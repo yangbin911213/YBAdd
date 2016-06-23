@@ -15,6 +15,8 @@
 		6CAD787F1D1BDBD2001F21D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD787D1D1BDBD2001F21D1 /* LaunchScreen.storyboard */; };
 		6CAD788A1D1BDBD2001F21D1 /* YBAddDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD78891D1BDBD2001F21D1 /* YBAddDemoTests.m */; };
 		6CAD78951D1BDBD2001F21D1 /* YBAddDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD78941D1BDBD2001F21D1 /* YBAddDemoUITests.m */; };
+		6CAD78AF1D1BE7E9001F21D1 /* NSTimer+YBAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD78AE1D1BE7E9001F21D1 /* NSTimer+YBAdd.m */; };
+		6CAD78B21D1BE8FD001F21D1 /* NSDate+YBAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD78B11D1BE8FD001F21D1 /* NSDate+YBAdd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		6CAD78901D1BDBD2001F21D1 /* YBAddDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBAddDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAD78941D1BDBD2001F21D1 /* YBAddDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBAddDemoUITests.m; sourceTree = "<group>"; };
 		6CAD78961D1BDBD2001F21D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CAD78AD1D1BE7E9001F21D1 /* NSTimer+YBAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+YBAdd.h"; sourceTree = "<group>"; };
+		6CAD78AE1D1BE7E9001F21D1 /* NSTimer+YBAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+YBAdd.m"; sourceTree = "<group>"; };
+		6CAD78B01D1BE8FD001F21D1 /* NSDate+YBAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YBAdd.h"; sourceTree = "<group>"; };
+		6CAD78B11D1BE8FD001F21D1 /* NSDate+YBAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YBAdd.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		6CAD786E1D1BDBD2001F21D1 /* YBAddDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6CAD78A71D1BE47D001F21D1 /* Foundation */,
+				6CAD78AA1D1BE47D001F21D1 /* Quartz */,
+				6CAD78AB1D1BE47D001F21D1 /* UIKit */,
 				6CAD78721D1BDBD2001F21D1 /* AppDelegate.h */,
 				6CAD78731D1BDBD2001F21D1 /* AppDelegate.m */,
 				6CAD78751D1BDBD2001F21D1 /* ViewController.h */,
@@ -138,6 +147,31 @@
 				6CAD78961D1BDBD2001F21D1 /* Info.plist */,
 			);
 			path = YBAddDemoUITests;
+			sourceTree = "<group>";
+		};
+		6CAD78A71D1BE47D001F21D1 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD78AD1D1BE7E9001F21D1 /* NSTimer+YBAdd.h */,
+				6CAD78AE1D1BE7E9001F21D1 /* NSTimer+YBAdd.m */,
+				6CAD78B01D1BE8FD001F21D1 /* NSDate+YBAdd.h */,
+				6CAD78B11D1BE8FD001F21D1 /* NSDate+YBAdd.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		6CAD78AA1D1BE47D001F21D1 /* Quartz */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Quartz;
+			sourceTree = "<group>";
+		};
+		6CAD78AB1D1BE47D001F21D1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +306,9 @@
 			files = (
 				6CAD78771D1BDBD2001F21D1 /* ViewController.m in Sources */,
 				6CAD78741D1BDBD2001F21D1 /* AppDelegate.m in Sources */,
+				6CAD78AF1D1BE7E9001F21D1 /* NSTimer+YBAdd.m in Sources */,
 				6CAD78711D1BDBD2001F21D1 /* main.m in Sources */,
+				6CAD78B21D1BE8FD001F21D1 /* NSDate+YBAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
